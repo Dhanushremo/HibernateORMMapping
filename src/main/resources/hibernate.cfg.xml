@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/springorm</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">2327</property>
+
+        <!-- JDBC connection pool -->
+        <property name="connection.pool_size">10</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Show generated SQL in logs -->
+        <property name="show_sql">true</property>
+
+        <!-- Automatically create or update tables -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Annotated entity class -->
+       <!-- <mapping class="" />-->
+
+    </session-factory>
+</hibernate-configuration>
